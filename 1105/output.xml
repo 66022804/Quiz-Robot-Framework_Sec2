@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.4 on win32)" generated="2025-02-11T10:09:21.588341" rpa="false" schemaversion="5">
+<suite id="s1" name="Work" source="d:\1105\work.robot">
+<test id="s1-t1" name="Login User with Incorrect Email and Password" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:09:21.768431" level="INFO">Opening browser 'Chrome' to base url 'http://automationexercise.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T10:09:21.768431" elapsed="20.332254"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-11T10:09:42.101692" elapsed="0.039942"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:09:42.148614" level="INFO">Page title is 'Automation Exercise'.</msg>
+<arg>Automation Exercise</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-02-11T10:09:42.142636" elapsed="0.005978"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:09:42.149612" level="INFO">Clicking element 'link=Signup / Login'.</msg>
+<arg>link=Signup / Login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T10:09:42.149612" elapsed="1.242533"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[text()='Login to your account']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:09:43.393142" elapsed="0.016073"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:09:43.423059" level="INFO">Element 'xpath=//h2[text()='Login to your account']' is displayed.</msg>
+<arg>xpath=//h2[text()='Login to your account']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:09:43.410175" elapsed="0.012884"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:09:43.423059" level="INFO">Typing text 'incorrectemail@example.com' into text field 'name=email'.</msg>
+<arg>name=email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T10:09:43.423059" elapsed="0.133832"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:09:43.557889" level="INFO">Typing text 'incorrectpassword123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T10:09:43.557889" elapsed="0.056847"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:09:43.615733" level="INFO">Clicking button 'xpath=//button[text()='Login']'.</msg>
+<arg>xpath=//button[text()='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T10:09:43.615733" elapsed="1.214346"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[text()='Your email or password is incorrect!']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:09:44.831071" elapsed="0.015731"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:09:44.856774" level="INFO">Element 'xpath=//p[text()='Your email or password is incorrect!']' is displayed.</msg>
+<arg>xpath=//p[text()='Your email or password is incorrect!']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:09:44.847798" elapsed="0.009979"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-11T10:09:44.857777" elapsed="2.120369"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:09:21.767387" elapsed="25.212761"/>
+</test>
+<status status="PASS" start="2025-02-11T10:09:21.592330" elapsed="25.392814"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Work" id="s1" pass="1" fail="0" skip="0">Work</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
